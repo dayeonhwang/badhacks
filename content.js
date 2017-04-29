@@ -32,9 +32,15 @@ $.confirm({
           action: function() {}
         },
         learn: {
-          btnClass: 'btn-purple',
+          btnClass: '.btn-lg',
           action: function() {
               window.location="https://docs.racket-lang.org/guide/intro.html#%28part._.Interacting_with_.Racket%29"
+          }
+        },
+        meet: {
+          btnClass: '.btn-success',
+          action: function() {
+              window.location="https://youtu.be/ZLF5dz9SM0w?t=70"
           }
         },
     },
