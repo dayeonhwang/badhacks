@@ -1,6 +1,6 @@
 $.confirm({
-  title: "Hi folks, what I mean by game design is",
-  content: '<img src="http://www.mccormick.northwestern.edu/magazine/images/spring-2016/computer-science-horswill.jpg">',
+  title: "Hi folks",
+  content: '<img src="http://media.gettyimages.com/photos/robert-zubek-and-ian-horswill-from-northwestern-university-calibrate-picture-id1607471">',
   animationClose: 'top',
     buttons: {
         info: {
