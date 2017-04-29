@@ -27,21 +27,15 @@ $.confirm({
             window.location="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           }
         },
-        rickrolling: {
-          btnClass: 'btn-green',
-          action: function() {}
-        },
         learn: {
           btnClass: '.btn-lg',
           action: function() {
               window.location="https://docs.racket-lang.org/guide/intro.html#%28part._.Interacting_with_.Racket%29"
           }
         },
-        meet: {
-          btnClass: '.btn-success',
-          action: function() {
-              window.location="https://youtu.be/ZLF5dz9SM0w?t=70"
-          }
+        rickrolling: {
+          btnClass: 'btn-green',
+          action: function() {}
         },
     },
 });
