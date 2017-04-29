@@ -31,5 +31,5 @@ $.confirm({
           btnClass: 'btn-blue',
           action: function() {}
         },
-    }
+    },
 });
