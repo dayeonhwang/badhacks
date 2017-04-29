@@ -31,5 +31,11 @@ $.confirm({
           btnClass: 'btn-green',
           action: function() {}
         },
+        learn: {
+          btnClass: 'btn-purple',
+          action: function() {
+              window.location="https://docs.racket-lang.org/guide/intro.html#%28part._.Interacting_with_.Racket%29"
+          }
+        },
     },
 });
