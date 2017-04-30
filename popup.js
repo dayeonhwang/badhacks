@@ -35,6 +35,7 @@ function getCurrentTabUrl(callback) {
     console.assert(typeof url == 'string', 'tab.url should be a string');
 
     callback(url);
+
   });
 
   // Most methods of the Chrome extension APIs are asynchronous. This means that
@@ -63,6 +64,7 @@ function getImageUrl(searchTerm, callback, errorCallback) {
   x.open('GET', searchUrl);
   // The Google image search API responds with JSON, so let Chrome parse it.
   x.responseType = 'json';
+  /*
   x.onload = function() {
     // Parse and process the response from Google Image Search.
     var response = x.response;
@@ -82,6 +84,10 @@ function getImageUrl(searchTerm, callback, errorCallback) {
         'Unexpected respose from the Google Image Search API!');
     callback(imageUrl, width, height);
   };
+  */
+  x.onload = function() {
+    document.write("Navigate to any webpage to experience Ian-ify");
+  }
   x.onerror = function() {
     errorCallback('Network error.');
   };
@@ -91,7 +97,7 @@ function getImageUrl(searchTerm, callback, errorCallback) {
 function renderStatus(statusText) {
   document.getElementById('status').textContent = statusText;
 }
-
+/*
 document.addEventListener('DOMContentLoaded', function() {
   getCurrentTabUrl(function(url) {
     // Put the image URL in Google search.
@@ -116,3 +122,4 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+*/
